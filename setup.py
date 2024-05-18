@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='automatic-code-review-commons',
-    version='1.0.0',
+    version='1.0.1',
     packages=find_packages(),
     description='Biblioteca com funções genéricas para revisões automáticas de código do projeto ACR',
     long_description=open('README.md').read(),
