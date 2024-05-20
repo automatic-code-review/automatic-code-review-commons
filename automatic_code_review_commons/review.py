@@ -1,9 +1,13 @@
+import inspect
 import json
 import os
 
 
 def run(fn_review):
-    path_config = os.path.dirname(os.path.abspath(__file__)) + "/config.json"
+    stack = inspect.stack()
+    caller_frame = stack[1]
+    caller_file = caller_frame.filename
+    path_config = os.path.dirname(os.path.abspath(caller_file)) + "/config.json"
 
     with open(path_config, 'r') as arquivo:
         config = json.load(arquivo)
