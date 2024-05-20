@@ -1,1 +1,2 @@
-from .commons import generate_id, create_comment
+import comment as comment
+import review as review

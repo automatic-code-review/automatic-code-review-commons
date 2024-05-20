@@ -7,13 +7,13 @@ def generate_id(comment):
     return md5_hash.hexdigest()
 
 
-def create_comment(comment_id,
-                   comment_path,
-                   comment_description,
-                   comment_end_line=1,
-                   comment_start_line=1,
-                   comment_snipset=True,
-                   comment_language=None):
+def create(comment_id,
+           comment_path,
+           comment_description,
+           comment_end_line=1,
+           comment_start_line=1,
+           comment_snipset=True,
+           comment_language=None):
     return {
         "id": comment_id,
         "comment": comment_description,
